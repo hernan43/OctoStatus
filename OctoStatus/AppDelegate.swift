@@ -10,12 +10,19 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
+    var statusItem:NSStatusItem?
+    
     @IBOutlet weak var window: NSWindow!
-
+    @IBOutlet weak var menu:NSMenu!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        let bar = NSStatusBar.systemStatusBar()
+        statusItem = bar.statusItemWithLength(CGFloat(-1))
+        menu = NSMenu()
+        statusItem!.title = ""
+        statusItem!.menu = menu
+        statusItem!.highlightMode = true
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

@@ -11,6 +11,8 @@
 		7114BA801A07B62C002EE529 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA7F1A07B62C002EE529 /* Images.xcassets */; };
 		7114BA831A07B62C002EE529 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA811A07B62C002EE529 /* MainMenu.xib */; };
 		7114BA8F1A07B62C002EE529 /* OctoStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */; };
+		71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9A1A0875D3006EAC3C /* tentacle.png */; };
+		71E6CB9D1A0875D3006EAC3C /* tentacle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		7114BA881A07B62C002EE529 /* OctoStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7114BA8D1A07B62C002EE529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoStatusTests.swift; sourceTree = "<group>"; };
+		71E6CB9A1A0875D3006EAC3C /* tentacle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tentacle.png; sourceTree = "<group>"; };
+		71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tentacle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		7114BA7B1A07B62C002EE529 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71E6CB9A1A0875D3006EAC3C /* tentacle.png */,
+				71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */,
 				7114BA7C1A07B62C002EE529 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -186,7 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E6CB9D1A0875D3006EAC3C /* tentacle@2x.png in Resources */,
 				7114BA801A07B62C002EE529 /* Images.xcassets in Resources */,
+				71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */,
 				7114BA831A07B62C002EE529 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +405,7 @@
 				7114BA941A07B62C002EE529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7114BA951A07B62C002EE529 /* Build configuration list for PBXNativeTarget "OctoStatusTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +414,7 @@
 				7114BA971A07B62C002EE529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,12 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OctoStatus" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OctoStatus" customModuleProvider="target">
+            <connections>
+                <outlet property="menu" destination="xYL-Yy-Krl" id="Ape-0C-DTe"/>
+                <outlet property="quitItem" destination="6V7-FU-byH" id="r79-aN-W4j"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -72,6 +77,17 @@
                     </menu>
                 </menuItem>
             </items>
+        </menu>
+        <menu id="xYL-Yy-Krl">
+            <items>
+                <menuItem title="Quit" id="6V7-FU-byH">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="FWM-b9-DWB"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="59.5" y="227.5"/>
         </menu>
     </objects>
 </document>

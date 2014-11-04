@@ -14,21 +14,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem:NSStatusItem?
     
     @IBOutlet weak var window: NSWindow!
-    @IBOutlet weak var menu:NSMenu!
+    @IBOutlet var menu: NSMenu!
+    @IBOutlet weak var quitItem: NSMenuItem!
+
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let bar = NSStatusBar.systemStatusBar()
-        statusItem = bar.statusItemWithLength(CGFloat(-1))
-        menu = NSMenu()
-        statusItem!.title = ""
-        statusItem!.menu = menu
-        statusItem!.highlightMode = true
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
 
-
+    override func awakeFromNib() {
+        let bar = NSStatusBar.systemStatusBar()
+        statusItem = bar.statusItemWithLength(CGFloat(-1))
+        
+        statusItem!.title = ""
+        statusItem!.menu = self.menu
+        statusItem!.highlightMode = true
+        statusItem!.image = NSImage(named:"tentacle")
+    }
+    
+    @IBAction func quitClicked(sender: AnyObject) {
+        NSApplication.sharedApplication().terminate(nil)
+    }
 }
 

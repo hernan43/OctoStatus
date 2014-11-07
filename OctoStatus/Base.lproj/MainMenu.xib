@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
@@ -20,57 +20,16 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
+                <menuItem title="Help" id="wpr-3q-Mcd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem title="OctoStatus" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="OctoStatus" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About OctoStatus" id="5kV-Vb-QxS">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
-                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
-                            <menuItem title="Services" id="NMo-om-nkz">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
-                            </menuItem>
-                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide OctoStatus" keyEquivalent="h" id="Olw-nP-bQN">
-                                <connections>
-                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
-                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                <connections>
-                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Show All" id="Kd2-mp-pUS">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
                             <menuItem title="Quit OctoStatus" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
-                </menuItem>
-                <menuItem title="Help" id="wpr-3q-Mcd">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
-                        <items>
-                            <menuItem title="OctoStatus Help" keyEquivalent="?" id="FKE-Sm-Kum">
-                                <connections>
-                                    <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -80,6 +39,9 @@
         </menu>
         <menu id="xYL-Yy-Krl">
             <items>
+                <menuItem title="Settings" id="tuW-xa-X31">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem title="Quit" id="6V7-FU-byH">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -87,7 +49,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="59.5" y="227.5"/>
+            <point key="canvasLocation" x="-322" y="171.5"/>
         </menu>
     </objects>
 </document>

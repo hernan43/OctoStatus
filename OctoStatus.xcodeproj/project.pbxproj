@@ -11,7 +11,8 @@
 		7114BA801A07B62C002EE529 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA7F1A07B62C002EE529 /* Images.xcassets */; };
 		7114BA831A07B62C002EE529 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA811A07B62C002EE529 /* MainMenu.xib */; };
 		7114BA8F1A07B62C002EE529 /* OctoStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */; };
-		7156C7671A0C69FC005AFE74 /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7156C7661A0C69FC005AFE74 /* SettingsWindow.xib */; };
+		7156C76A1A0C6DBE005AFE74 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156C7681A0C6DBE005AFE74 /* SettingsController.swift */; };
+		7156C76B1A0C6DBE005AFE74 /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7156C7691A0C6DBE005AFE74 /* SettingsController.xib */; };
 		71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9A1A0875D3006EAC3C /* tentacle.png */; };
 		71E6CB9D1A0875D3006EAC3C /* tentacle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */; };
 /* End PBXBuildFile section */
@@ -35,7 +36,8 @@
 		7114BA881A07B62C002EE529 /* OctoStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7114BA8D1A07B62C002EE529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoStatusTests.swift; sourceTree = "<group>"; };
-		7156C7661A0C69FC005AFE74 /* SettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindow.xib; sourceTree = "<group>"; };
+		7156C7681A0C6DBE005AFE74 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		7156C7691A0C6DBE005AFE74 /* SettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
 		71E6CB9A1A0875D3006EAC3C /* tentacle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tentacle.png; sourceTree = "<group>"; };
 		71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tentacle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,10 +81,11 @@
 		7114BA7A1A07B62C002EE529 /* OctoStatus */ = {
 			isa = PBXGroup;
 			children = (
+				7156C7681A0C6DBE005AFE74 /* SettingsController.swift */,
+				7156C7691A0C6DBE005AFE74 /* SettingsController.xib */,
 				7114BA7D1A07B62C002EE529 /* AppDelegate.swift */,
 				7114BA7F1A07B62C002EE529 /* Images.xcassets */,
 				7114BA811A07B62C002EE529 /* MainMenu.xib */,
-				7156C7661A0C69FC005AFE74 /* SettingsWindow.xib */,
 				7114BA7B1A07B62C002EE529 /* Supporting Files */,
 			);
 			path = OctoStatus;
@@ -197,8 +200,8 @@
 			files = (
 				71E6CB9D1A0875D3006EAC3C /* tentacle@2x.png in Resources */,
 				7114BA801A07B62C002EE529 /* Images.xcassets in Resources */,
-				7156C7671A0C69FC005AFE74 /* SettingsWindow.xib in Resources */,
 				71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */,
+				7156C76B1A0C6DBE005AFE74 /* SettingsController.xib in Resources */,
 				7114BA831A07B62C002EE529 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7156C76A1A0C6DBE005AFE74 /* SettingsController.swift in Sources */,
 				7114BA7E1A07B62C002EE529 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

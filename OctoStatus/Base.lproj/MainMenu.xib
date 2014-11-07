@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="menu" destination="xYL-Yy-Krl" id="Ape-0C-DTe"/>
                 <outlet property="quitItem" destination="6V7-FU-byH" id="r79-aN-W4j"/>
+                <outlet property="settingsItem" destination="tuW-xa-X31" id="w8X-eh-BR6"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -41,6 +42,9 @@
             <items>
                 <menuItem title="Settings" id="tuW-xa-X31">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="settingsClicked:" target="Voe-Tx-rLC" id="04X-I3-jhQ"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="Quit" id="6V7-FU-byH">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -49,7 +53,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-322" y="171.5"/>
+            <point key="canvasLocation" x="-662" y="178.5"/>
         </menu>
     </objects>
 </document>

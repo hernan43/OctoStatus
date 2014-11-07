@@ -12,9 +12,11 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusItem:NSStatusItem?
+    lazy var settingsController = SettingsController(windowNibName: "SettingsController")
     
     @IBOutlet weak var window: NSWindow!
     @IBOutlet var menu: NSMenu!
+    @IBOutlet weak var settingsItem: NSMenuItem!
     @IBOutlet weak var quitItem: NSMenuItem!
 
 
@@ -33,6 +35,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem!.menu = self.menu
         statusItem!.highlightMode = true
         statusItem!.image = NSImage(named:"tentacle")
+    }
+    
+    @IBAction func settingsClicked(sender: AnyObject) {
+        settingsController.showWindow(nil)
     }
     
     @IBAction func quitClicked(sender: AnyObject) {

@@ -11,10 +11,15 @@
 		7114BA801A07B62C002EE529 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA7F1A07B62C002EE529 /* Images.xcassets */; };
 		7114BA831A07B62C002EE529 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA811A07B62C002EE529 /* MainMenu.xib */; };
 		7114BA8F1A07B62C002EE529 /* OctoStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */; };
+		714EB9631A17BC0900450B8D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 714EB95E1A17BC0900450B8D /* LICENSE */; };
+		714EB9641A17BC0900450B8D /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 714EB9601A17BC0900450B8D /* SSKeychain.m */; };
+		714EB9651A17BC0900450B8D /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 714EB9621A17BC0900450B8D /* SSKeychainQuery.m */; };
+		714EB96B1A17BD1700450B8D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714EB96A1A17BD1700450B8D /* Security.framework */; };
 		7156C76A1A0C6DBE005AFE74 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156C7681A0C6DBE005AFE74 /* SettingsController.swift */; };
 		7156C76B1A0C6DBE005AFE74 /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7156C7691A0C6DBE005AFE74 /* SettingsController.xib */; };
 		71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9A1A0875D3006EAC3C /* tentacle.png */; };
 		71E6CB9D1A0875D3006EAC3C /* tentacle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */; };
+		71E7754F1A17BEB1008B9F9D /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7754E1A17BEB1008B9F9D /* CredentialStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +41,18 @@
 		7114BA881A07B62C002EE529 /* OctoStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7114BA8D1A07B62C002EE529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoStatusTests.swift; sourceTree = "<group>"; };
+		714EB95E1A17BC0900450B8D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		714EB95F1A17BC0900450B8D /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		714EB9601A17BC0900450B8D /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		714EB9611A17BC0900450B8D /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		714EB9621A17BC0900450B8D /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		714EB96A1A17BD1700450B8D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7156C7681A0C6DBE005AFE74 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		7156C7691A0C6DBE005AFE74 /* SettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
 		71E6CB9A1A0875D3006EAC3C /* tentacle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tentacle.png; sourceTree = "<group>"; };
 		71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tentacle@2x.png"; sourceTree = "<group>"; };
+		71E7754D1A17BE48008B9F9D /* OctoStatus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OctoStatus-Bridging-Header.h"; sourceTree = "<group>"; };
+		71E7754E1A17BEB1008B9F9D /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714EB96B1A17BD1700450B8D /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +95,16 @@
 		7114BA7A1A07B62C002EE529 /* OctoStatus */ = {
 			isa = PBXGroup;
 			children = (
+				71E7754E1A17BEB1008B9F9D /* CredentialStore.swift */,
 				7156C7681A0C6DBE005AFE74 /* SettingsController.swift */,
 				7156C7691A0C6DBE005AFE74 /* SettingsController.xib */,
 				7114BA7D1A07B62C002EE529 /* AppDelegate.swift */,
 				7114BA7F1A07B62C002EE529 /* Images.xcassets */,
 				7114BA811A07B62C002EE529 /* MainMenu.xib */,
 				7114BA7B1A07B62C002EE529 /* Supporting Files */,
+				714EB95D1A17BC0900450B8D /* SSKeychain */,
+				714EB96C1A17BD2200450B8D /* Frameworks */,
+				71E7754D1A17BE48008B9F9D /* OctoStatus-Bridging-Header.h */,
 			);
 			path = OctoStatus;
 			sourceTree = "<group>";
@@ -118,6 +136,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		714EB95D1A17BC0900450B8D /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				714EB95E1A17BC0900450B8D /* LICENSE */,
+				714EB95F1A17BC0900450B8D /* SSKeychain.h */,
+				714EB9601A17BC0900450B8D /* SSKeychain.m */,
+				714EB9611A17BC0900450B8D /* SSKeychainQuery.h */,
+				714EB9621A17BC0900450B8D /* SSKeychainQuery.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		714EB96C1A17BD2200450B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				714EB96A1A17BD1700450B8D /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,11 +163,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7114BA921A07B62C002EE529 /* Build configuration list for PBXNativeTarget "OctoStatus" */;
 			buildPhases = (
-				0013B41D2D1CEB3CCF6A20CD /* Check Pods Manifest.lock */,
 				7114BA741A07B62C002EE529 /* Sources */,
 				7114BA751A07B62C002EE529 /* Frameworks */,
 				7114BA761A07B62C002EE529 /* Resources */,
-				6097B0CD84E70795019F19E1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714EB9631A17BC0900450B8D /* LICENSE in Resources */,
 				71E6CB9D1A0875D3006EAC3C /* tentacle@2x.png in Resources */,
 				7114BA801A07B62C002EE529 /* Images.xcassets in Resources */,
 				71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */,
@@ -217,46 +254,16 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0013B41D2D1CEB3CCF6A20CD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6097B0CD84E70795019F19E1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7114BA741A07B62C002EE529 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714EB9651A17BC0900450B8D /* SSKeychainQuery.m in Sources */,
+				71E7754F1A17BEB1008B9F9D /* CredentialStore.swift in Sources */,
 				7156C76A1A0C6DBE005AFE74 /* SettingsController.swift in Sources */,
 				7114BA7E1A07B62C002EE529 /* AppDelegate.swift in Sources */,
+				714EB9641A17BC0900450B8D /* SSKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +385,6 @@
 				INFOPLIST_FILE = OctoStatus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "OctoStatus/OctoStatus-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = x86_64;
 			};
@@ -393,7 +399,6 @@
 				INFOPLIST_FILE = OctoStatus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "OctoStatus/OctoStatus-Bridging-Header.h";
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;

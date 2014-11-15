@@ -1,5 +1,6 @@
 //
-// OctoStatus is a status bar widget for OS X that gives feedback on what OctoPrint is doing.
+// OctoStatus is a status bar widget for OS X that gives feedback on 
+// what OctoPrint is doing.
 // Copyright (C) 2014  Ray Hernandez
 //
 // This program is free software: you can redistribute it and/or modify
@@ -20,6 +21,9 @@ import Cocoa
 
 class SettingsController: NSWindowController {
 
+    var url: String?
+    var token: String?
+    
     @IBOutlet weak var urlField: NSTextField!
     @IBOutlet weak var tokenField: NSTextField!
     

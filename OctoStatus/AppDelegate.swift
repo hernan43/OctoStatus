@@ -30,7 +30,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var settingsItem: NSMenuItem!
     @IBOutlet weak var quitItem: NSMenuItem!
 
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
     }
 
@@ -49,6 +48,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func settingsClicked(sender: AnyObject) {
+        CredentialStore.getAPIURL()
+        
         settingsController.showWindow(nil)
     }
     

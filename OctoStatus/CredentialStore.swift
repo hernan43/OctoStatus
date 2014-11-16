@@ -18,3 +18,37 @@
 //
 
 import Foundation
+
+class CredentialStore {
+    
+    // workaround for lack of class variables
+    class func serviceName() -> String {
+        return "com.github.hernan43.octostatus"
+    }
+    
+    class func getAPIURL() -> String? {
+        return NSUserDefaults.standardUserDefaults().objectForKey("api_url") as? String
+    }
+    
+    class func getAPIToken() -> String? {
+        
+        if let account = CredentialStore.getAPIURL() {
+            return SSKeychain.passwordForService(CredentialStore.serviceName(), account: account)
+        }
+        
+        return nil
+    }
+    
+    class func setAPIURL(url: String) {
+        NSUserDefaults.standardUserDefaults().setValue(url, forKey: "api_url")
+    }
+    
+    class func setAPIToken(token: String) -> Bool {
+        if let account = CredentialStore.getAPIURL() {
+            return SSKeychain.setPassword(token, forService: CredentialStore.serviceName(), account: CredentialStore.getAPIURL())
+        }
+        
+        return false
+    }
+
+}

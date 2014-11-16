@@ -33,7 +33,7 @@ class SettingsController: NSWindowController {
     
     @IBAction func okClicked(sender: AnyObject) {
         // do stuff
-        
+
         // then
         window?.close()
     }

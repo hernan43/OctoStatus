@@ -43,6 +43,15 @@ class CredentialStore {
         return nil
     }
     
+    class func setCredentials(url: String, token: String) -> Bool {
+        if url != "" && token != "" {
+            CredentialStore.setAPIURL(url)
+            return CredentialStore.setAPIToken(token)
+        }
+        
+        return false
+    }
+    
     class func setAPIURL(url: String) {
         NSUserDefaults.standardUserDefaults().setValue(url, forKey: CredentialStore.urlKey())
     }

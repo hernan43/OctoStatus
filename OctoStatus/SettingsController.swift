@@ -28,13 +28,17 @@ class SettingsController: NSWindowController {
     @IBOutlet weak var tokenField: NSTextField!
     
     override func windowDidLoad() {
+        // set textField values
+        urlField.setValue(CredentialStore.getAPIURL())
+        tokenField.setValue(CredentialStore.getAPIToken())
+        
         super.windowDidLoad()
     }
     
     @IBAction func okClicked(sender: AnyObject) {
         // do stuff
+        CredentialStore.setCredentials(urlField.stringValue, token: tokenField.stringValue)
 
-        // then
         window?.close()
     }
     

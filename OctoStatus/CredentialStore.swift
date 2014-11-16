@@ -26,8 +26,12 @@ class CredentialStore {
         return "com.github.hernan43.octostatus"
     }
     
+    class func urlKey() -> String {
+        return "api_url"
+    }
+    
     class func getAPIURL() -> String? {
-        return NSUserDefaults.standardUserDefaults().objectForKey("api_url") as? String
+        return NSUserDefaults.standardUserDefaults().objectForKey(CredentialStore.urlKey()) as? String
     }
     
     class func getAPIToken() -> String? {
@@ -40,7 +44,7 @@ class CredentialStore {
     }
     
     class func setAPIURL(url: String) {
-        NSUserDefaults.standardUserDefaults().setValue(url, forKey: "api_url")
+        NSUserDefaults.standardUserDefaults().setValue(url, forKey: CredentialStore.urlKey())
     }
     
     class func setAPIToken(token: String) -> Bool {

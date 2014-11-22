@@ -29,8 +29,8 @@ class SettingsController: NSWindowController {
     
     override func windowDidLoad() {
         // set textField values
-        urlField.setValue(CredentialStore.getAPIURL())
-        tokenField.setValue(CredentialStore.getAPIToken())
+        urlField.stringValue = CredentialStore.getAPIURL()!
+        tokenField.stringValue = CredentialStore.getAPIToken()!
         
         super.windowDidLoad()
     }

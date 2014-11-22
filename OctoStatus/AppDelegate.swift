@@ -24,6 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusItem:NSStatusItem?
     lazy var settingsController = SettingsController(windowNibName: "SettingsController")
+    lazy var client = OctoPrintClient.sharedInstance
     
     @IBOutlet weak var window: NSWindow!
     @IBOutlet var menu: NSMenu!

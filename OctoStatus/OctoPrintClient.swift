@@ -20,6 +20,71 @@
 import Cocoa
 import Alamofire
 
-class OctoPrintClient: NSObject {
+class OctoPrintClient {
+    
+    var url: String
+    var token: String
+    let manager: Alamofire.Manager
+    
+    class var sharedInstance : OctoPrintClient {
+        struct Static {
+            static let instance : OctoPrintClient = OctoPrintClient()
+        }
+        return Static.instance
+    }
+    
+    init(){
+        url = CredentialStore.getAPIURL()!
+        token = CredentialStore.getAPIToken()!
+        var configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        manager = Alamofire.Manager(configuration: configuration)
+    }
+    
+    class func regrabCredentials(){
+        sharedInstance.url = CredentialStore.getAPIURL()!
+        sharedInstance.token = CredentialStore.getAPIToken()!
+    }
+    
+    func jobStatus() {
+        var request = Alamofire.request(Router.JobStatus).responseJSON { (_, _, JSON, _) in
+            // do something useful with the JSON
+            // println(JSON)
+        }
+    }
+}
 
+enum Router: URLRequestConvertible {
+    static var baseURLString: String { return OctoPrintClient.sharedInstance.url }
+    static var APIToken: String { return OctoPrintClient.sharedInstance.token }
+    
+    case JobStatus
+    
+    var method: Alamofire.Method {
+        switch self {
+        case .JobStatus:
+            return .GET
+        }
+    }
+    
+    var path: String {
+        switch self {
+        case .JobStatus:
+                return "/api/job"
+            default:
+                return "/"
+        }
+    }
+    
+    var URLRequest: NSURLRequest {
+        let URL = NSURL(string: Router.baseURLString)!
+        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
+        
+        mutableURLRequest.HTTPMethod = method.rawValue
+        mutableURLRequest.setValue(Router.APIToken, forHTTPHeaderField: "X-Api-Key")
+        
+        switch self {
+            default:
+                return mutableURLRequest
+        }
+    }
 }

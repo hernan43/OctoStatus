@@ -9,6 +9,10 @@
 import Cocoa
 
 class OctoStatusMenu: NSMenu, NSMenuDelegate {
+    @IBOutlet weak var statusItem: NSMenuItem!
+    @IBOutlet weak var modelNameItem: NSMenuItem!
+    @IBOutlet weak var timeRemainingItem: NSMenuItem!
+    @IBOutlet weak var progressItem: NSMenuItem!
     @IBOutlet weak var settingsItem: NSMenuItem!
     @IBOutlet weak var quitItem: NSMenuItem!
     
@@ -19,11 +23,17 @@ class OctoStatusMenu: NSMenu, NSMenuDelegate {
     override init(title aTitle: String){
         super.init(title: aTitle)
         startPolling()
+        setupItems()
     }
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         startPolling()
+        setupItems()
+    }
+    
+    func setupItems(){
+    
     }
     
     func startPolling(){

@@ -47,6 +47,12 @@
                 <menuItem title="Time remaining" id="bg5-cm-7fu">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
+                <menuItem title="Progress" id="Zel-y9-l8K">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <outlet property="view" destination="cgz-uy-O4B" id="ylV-qU-bPO"/>
+                    </connections>
+                </menuItem>
                 <menuItem isSeparatorItem="YES" id="uD5-Nm-P8q"/>
                 <menuItem title="Settings" id="tuW-xa-X31">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -63,10 +69,24 @@
             </items>
             <connections>
                 <outlet property="delegate" destination="-2" id="ZoO-cs-4Q3"/>
+                <outlet property="modelNameItem" destination="kte-lK-NkN" id="vKJ-f4-1SS"/>
+                <outlet property="progressItem" destination="Zel-y9-l8K" id="sYH-an-eBU"/>
                 <outlet property="quitItem" destination="6V7-FU-byH" id="BaH-1v-B6b"/>
                 <outlet property="settingsItem" destination="tuW-xa-X31" id="Zbo-aB-W6Q"/>
+                <outlet property="statusItem" destination="rhs-Y5-RKD" id="3Sk-hp-ogJ"/>
+                <outlet property="timeRemainingItem" destination="bg5-cm-7fu" id="sk7-zB-v33"/>
             </connections>
-            <point key="canvasLocation" x="-993" y="9.5"/>
+            <point key="canvasLocation" x="-1377.5" y="-78.5"/>
         </menu>
+        <customView id="1zb-iA-N8Q">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-uy-O4B">
+                    <rect key="frame" x="5" y="1" width="152" height="20"/>
+                </progressIndicator>
+            </subviews>
+            <point key="canvasLocation" x="-1068.5" y="187"/>
+        </customView>
     </objects>
 </document>

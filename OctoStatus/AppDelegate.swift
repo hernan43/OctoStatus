@@ -24,6 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusItem:NSStatusItem?
     lazy var client = OctoPrintClient.sharedInstance
+    var updateStatusbarTimer: NSTimer?
     
     @IBOutlet var menu: OctoStatusMenu!
 
@@ -42,6 +43,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem!.menu = self.menu
         statusItem!.highlightMode = true
         statusItem!.image = NSImage(named:"tentacle")
-    }    
+        
+        updateStatusbarTimer = NSTimer.scheduledTimerWithTimeInterval(
+            1.0,
+            target: self,
+            selector: "updateStatusbar",
+            userInfo: nil,
+            repeats: true)
+    }
+    
+    func updateStatusbar() {
+        if let status = (statusItem?.menu? as? OctoStatusMenu)?.getJobStatus() {
+            switch status {
+                default:
+                    statusItem?.title = status
+            }
+        } else {
+            statusItem?.title = ""
+        }
+    }
 }
 

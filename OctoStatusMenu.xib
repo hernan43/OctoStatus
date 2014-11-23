@@ -85,8 +85,11 @@
                 </menuItem>
             </items>
             <connections>
+                <outlet property="filenameItem" destination="q2E-ob-YaR" id="Z4F-IG-RcU"/>
+                <outlet property="jobStatusItem" destination="Y3W-yM-fxy" id="rrj-Xf-Fo7"/>
                 <outlet property="quitItem" destination="gNp-6g-eh6" id="NBf-Vf-7gD"/>
                 <outlet property="settingsItem" destination="shg-hi-8tY" id="zKQ-nz-PIv"/>
+                <outlet property="timeRemainingItem" destination="BDZ-LS-4fF" id="c7j-mo-30H"/>
             </connections>
             <point key="canvasLocation" x="107" y="123.5"/>
         </menu>

@@ -45,11 +45,8 @@ class OctoPrintClient {
         sharedInstance.token = CredentialStore.getAPIToken()!
     }
     
-    func jobStatus() {
-        var request = Alamofire.request(Router.JobStatus).responseJSON { (_, _, JSON, _) in
-            // do something useful with the JSON
-            // println(JSON)
-        }
+    func jobStatus() -> Request {
+        return Alamofire.request(Router.JobStatus)
     }
 }
 

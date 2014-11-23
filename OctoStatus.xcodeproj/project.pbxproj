@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7114BA7E1A07B62C002EE529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7114BA7D1A07B62C002EE529 /* AppDelegate.swift */; };
 		7114BA801A07B62C002EE529 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA7F1A07B62C002EE529 /* Images.xcassets */; };
-		7114BA831A07B62C002EE529 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA811A07B62C002EE529 /* MainMenu.xib */; };
+		7114BA831A07B62C002EE529 /* OctoStatusMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7114BA811A07B62C002EE529 /* OctoStatusMenu.xib */; };
 		7114BA8F1A07B62C002EE529 /* OctoStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */; };
 		711B04221A20EFA6001703F2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711B041D1A20EEEF001703F2 /* Alamofire.framework */; };
 		711B04241A20EFC6001703F2 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 711B041D1A20EEEF001703F2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -76,7 +76,7 @@
 		7114BA7C1A07B62C002EE529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7114BA7D1A07B62C002EE529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7114BA7F1A07B62C002EE529 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7114BA821A07B62C002EE529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7114BA821A07B62C002EE529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OctoStatusMenu.xib; sourceTree = "<group>"; };
 		7114BA881A07B62C002EE529 /* OctoStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7114BA8D1A07B62C002EE529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7114BA8E1A07B62C002EE529 /* OctoStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoStatusTests.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 				717E98841A2172960018743C /* OctoStatusMenu.swift */,
 				7156C7681A0C6DBE005AFE74 /* SettingsController.swift */,
 				7156C7691A0C6DBE005AFE74 /* SettingsController.xib */,
-				7114BA811A07B62C002EE529 /* MainMenu.xib */,
+				7114BA811A07B62C002EE529 /* OctoStatusMenu.xib */,
 				7114BA7B1A07B62C002EE529 /* Supporting Files */,
 				711B04161A20EEDC001703F2 /* Alamofire */,
 				714EB95D1A17BC0900450B8D /* SSKeychain */,
@@ -329,7 +329,7 @@
 				7114BA801A07B62C002EE529 /* Images.xcassets in Resources */,
 				71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */,
 				7156C76B1A0C6DBE005AFE74 /* SettingsController.xib in Resources */,
-				7114BA831A07B62C002EE529 /* MainMenu.xib in Resources */,
+				7114BA831A07B62C002EE529 /* OctoStatusMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,12 +381,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7114BA811A07B62C002EE529 /* MainMenu.xib */ = {
+		7114BA811A07B62C002EE529 /* OctoStatusMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7114BA821A07B62C002EE529 /* Base */,
 			);
-			name = MainMenu.xib;
+			name = OctoStatusMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

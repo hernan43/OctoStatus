@@ -13,8 +13,32 @@ class OctoStatusMenu: NSMenu, NSMenuDelegate {
     @IBOutlet weak var quitItem: NSMenuItem!
     
     lazy var settingsController = SettingsController(windowNibName: "SettingsController")
+    // will use this to poll OctoPrint via the client
+    var jobStatusTimer: NSTimer?
+    
+    override init(title aTitle: String){
+        super.init(title: aTitle)
+        startPolling()
+    }
 
-
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        startPolling()
+    }
+    
+    func startPolling(){
+        jobStatusTimer = NSTimer.scheduledTimerWithTimeInterval(
+            5.0,
+            target: self,
+            selector: "checkJobStatus",
+            userInfo: nil,
+            repeats: true)
+    }
+    
+    func checkJobStatus(){
+        println("checkJobStatus called....")
+    }
+    
     @IBAction func settingsClicked(sender: AnyObject) {
         CredentialStore.getAPIURL()
         

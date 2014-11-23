@@ -38,6 +38,16 @@
         </menu>
         <menu id="xYL-Yy-Krl" customClass="OctoStatusMenu" customModule="OctoStatus" customModuleProvider="target">
             <items>
+                <menuItem title="Status" id="rhs-Y5-RKD">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Name of model" id="kte-lK-NkN">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Time remaining" id="bg5-cm-7fu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="uD5-Nm-P8q"/>
                 <menuItem title="Settings" id="tuW-xa-X31">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

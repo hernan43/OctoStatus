@@ -13,9 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OctoStatus" customModuleProvider="target">
             <connections>
-                <outlet property="menu" destination="xYL-Yy-Krl" id="Ape-0C-DTe"/>
-                <outlet property="quitItem" destination="6V7-FU-byH" id="r79-aN-W4j"/>
-                <outlet property="settingsItem" destination="tuW-xa-X31" id="w8X-eh-BR6"/>
+                <outlet property="menu" destination="xYL-Yy-Krl" id="n5e-9I-gmp"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -38,22 +36,27 @@
                 </menuItem>
             </items>
         </menu>
-        <menu id="xYL-Yy-Krl">
+        <menu id="xYL-Yy-Krl" customClass="OctoStatusMenu" customModule="OctoStatus" customModuleProvider="target">
             <items>
                 <menuItem title="Settings" id="tuW-xa-X31">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="settingsClicked:" target="Voe-Tx-rLC" id="04X-I3-jhQ"/>
+                        <action selector="settingsClicked:" target="xYL-Yy-Krl" id="VDy-0N-TCD"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" id="6V7-FU-byH">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="FWM-b9-DWB"/>
+                        <action selector="quitClicked:" target="xYL-Yy-Krl" id="0QJ-Jo-0KM"/>
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-662" y="178.5"/>
+            <connections>
+                <outlet property="delegate" destination="-2" id="ZoO-cs-4Q3"/>
+                <outlet property="quitItem" destination="6V7-FU-byH" id="BaH-1v-B6b"/>
+                <outlet property="settingsItem" destination="tuW-xa-X31" id="Zbo-aB-W6Q"/>
+            </connections>
+            <point key="canvasLocation" x="-993" y="9.5"/>
         </menu>
     </objects>
 </document>

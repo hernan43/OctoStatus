@@ -23,13 +23,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusItem:NSStatusItem?
-    lazy var settingsController = SettingsController(windowNibName: "SettingsController")
     lazy var client = OctoPrintClient.sharedInstance
     
-    @IBOutlet weak var window: NSWindow!
-    @IBOutlet var menu: NSMenu!
-    @IBOutlet weak var settingsItem: NSMenuItem!
-    @IBOutlet weak var quitItem: NSMenuItem!
+    @IBOutlet var menu: OctoStatusMenu!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
     }
@@ -46,16 +42,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem!.menu = self.menu
         statusItem!.highlightMode = true
         statusItem!.image = NSImage(named:"tentacle")
-    }
-    
-    @IBAction func settingsClicked(sender: AnyObject) {
-        CredentialStore.getAPIURL()
-        
-        settingsController.showWindow(nil)
-    }
-    
-    @IBAction func quitClicked(sender: AnyObject) {
-        NSApplication.sharedApplication().terminate(nil)
-    }
+    }    
 }
 

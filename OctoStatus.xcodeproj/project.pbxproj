@@ -20,6 +20,7 @@
 		714EB96B1A17BD1700450B8D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714EB96A1A17BD1700450B8D /* Security.framework */; };
 		7156C76A1A0C6DBE005AFE74 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156C7681A0C6DBE005AFE74 /* SettingsController.swift */; };
 		7156C76B1A0C6DBE005AFE74 /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7156C7691A0C6DBE005AFE74 /* SettingsController.xib */; };
+		717E98851A2172960018743C /* OctoStatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E98841A2172960018743C /* OctoStatusMenu.swift */; };
 		71E6CB9C1A0875D3006EAC3C /* tentacle.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9A1A0875D3006EAC3C /* tentacle.png */; };
 		71E6CB9D1A0875D3006EAC3C /* tentacle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */; };
 		71E7754F1A17BEB1008B9F9D /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7754E1A17BEB1008B9F9D /* CredentialStore.swift */; };
@@ -89,6 +90,7 @@
 		714EB96A1A17BD1700450B8D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7156C7681A0C6DBE005AFE74 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		7156C7691A0C6DBE005AFE74 /* SettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
+		717E98841A2172960018743C /* OctoStatusMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoStatusMenu.swift; sourceTree = "<group>"; };
 		71E6CB9A1A0875D3006EAC3C /* tentacle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tentacle.png; sourceTree = "<group>"; };
 		71E6CB9B1A0875D3006EAC3C /* tentacle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tentacle@2x.png"; sourceTree = "<group>"; };
 		71E7754D1A17BE48008B9F9D /* OctoStatus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OctoStatus-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -138,8 +140,9 @@
 			children = (
 				7114BA7D1A07B62C002EE529 /* AppDelegate.swift */,
 				71E7754E1A17BEB1008B9F9D /* CredentialStore.swift */,
-				71E7754D1A17BE48008B9F9D /* OctoStatus-Bridging-Header.h */,
 				711B04251A20F038001703F2 /* OctoPrintClient.swift */,
+				71E7754D1A17BE48008B9F9D /* OctoStatus-Bridging-Header.h */,
+				717E98841A2172960018743C /* OctoStatusMenu.swift */,
 				7156C7681A0C6DBE005AFE74 /* SettingsController.swift */,
 				7156C7691A0C6DBE005AFE74 /* SettingsController.xib */,
 				7114BA811A07B62C002EE529 /* MainMenu.xib */,
@@ -349,6 +352,7 @@
 				7156C76A1A0C6DBE005AFE74 /* SettingsController.swift in Sources */,
 				711B04261A20F038001703F2 /* OctoPrintClient.swift in Sources */,
 				7114BA7E1A07B62C002EE529 /* AppDelegate.swift in Sources */,
+				717E98851A2172960018743C /* OctoStatusMenu.swift in Sources */,
 				714EB9641A17BC0900450B8D /* SSKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

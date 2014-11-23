@@ -47,7 +47,10 @@ class OctoStatusMenu: NSMenu {
     }
     
     @IBAction func settingsClicked(sender: AnyObject) {
-        settingsController.showWindow(nil)
+        if let window = settingsController.window? {
+            window.center()
+            window.makeKeyAndOrderFront(window)
+        }
     }
     
     @IBAction func quitClicked(sender: AnyObject) {

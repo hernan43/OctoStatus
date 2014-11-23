@@ -8,11 +8,8 @@
 
 import Cocoa
 
-class OctoStatusMenu: NSMenu, NSMenuDelegate {
-    @IBOutlet weak var statusItem: NSMenuItem!
-    @IBOutlet weak var modelNameItem: NSMenuItem!
-    @IBOutlet weak var timeRemainingItem: NSMenuItem!
-    @IBOutlet weak var progressItem: NSMenuItem!
+class OctoStatusMenu: NSMenu {
+    
     @IBOutlet weak var settingsItem: NSMenuItem!
     @IBOutlet weak var quitItem: NSMenuItem!
     
@@ -50,8 +47,6 @@ class OctoStatusMenu: NSMenu, NSMenuDelegate {
     }
     
     @IBAction func settingsClicked(sender: AnyObject) {
-        CredentialStore.getAPIURL()
-        
         settingsController.showWindow(nil)
     }
     

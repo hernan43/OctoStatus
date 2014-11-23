@@ -60,8 +60,25 @@ class OctoStatusMenu: NSMenu {
         if let status = json["state"]? as? String {
 
             // set both the statusitem and menuitem
-            jobStatusItem.title = status
-
+            jobStatusItem.title = status.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            /*
+            List of states I could find in the OctoPrint source
+            
+            Offline
+            Opening serial port
+            Detecting serial port
+            Detecting baudrate
+            Connecting
+            Operational
+            Printing from SD
+            Sending file to SD
+            Printing
+            Paused
+            Closed
+            Error: %s
+            Transfering file to SD
+            
+            */
             switch status {
                 default:
                     goOffline()

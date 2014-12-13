@@ -3,6 +3,9 @@
 
 OctoStatus is a status bar widget for OS X. The idea is to have it talk to [OctoPrint](https://github.com/foosel/OctoPrint) and give feedback on the status of what OctoPrint is doing. Specifically, the intention is to get time remaining on prints and information on any errors that may have occurred.
 
+![Status bar plain](/Screenshots/status_bar.png?raw=true "Status bar plain")
+![Status bar with context menu](/Screenshots/status_bar_with_menu.png?raw=true "Status bar with context menu")
+
 ## What it does
 
 Right now it just reports the printer's current status and currently loaded file(if one is loaded). Not exciting, but with further testing I am hoping to make it way more useful.

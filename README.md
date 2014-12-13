@@ -5,7 +5,7 @@ OctoStatus is a status bar widget for OS X. The idea is to have it talk to [Octo
 
 ## What it does
 
-Right now it just reports if the printer is offline or not. Not exciting, but with further testing I am hoping to make it way more useful.
+Right now it just reports the printer's current status and currently loaded file(if one is loaded). Not exciting, but with further testing I am hoping to make it way more useful.
 
 ## What I'd like it to do
 

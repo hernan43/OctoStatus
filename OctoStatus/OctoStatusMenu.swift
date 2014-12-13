@@ -44,16 +44,31 @@ class OctoStatusMenu: NSMenu {
     func checkJobStatus(){
         OctoPrintClient.sharedInstance.jobStatus().responseJSON { (_, _, JSON, _) in
             if let json: AnyObject = JSON? {
+                //println(json)
                 self.processJSONResponse(json)
             }
         }
     }
 
-    func goOffline(){
+    func setMenuItems(json: AnyObject){
+        setFilename(json)
+
         // hide everything but the status
         jobStatusItem.hidden = false
-        filenameItem.hidden = true
         timeRemainingItem.hidden = true
+    }
+    
+    func setFilename(json: AnyObject){
+        // default state
+        filenameItem.hidden = true
+
+        // set active filename, if loaded
+        if let filename = json.valueForKeyPath("job.file.name") as? String {
+            filenameItem.title = "file: \(filename)"
+            // show filename if file is loaded
+            filenameItem.hidden = false
+        }
+
     }
     
     func processJSONResponse(json: AnyObject) {
@@ -81,7 +96,7 @@ class OctoStatusMenu: NSMenu {
             */
             switch status {
                 default:
-                    goOffline()
+                    setMenuItems(json)
             }
         }
     }

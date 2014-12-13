@@ -46,7 +46,7 @@ class OctoPrintClient {
     }
     
     func jobStatus() -> Request {
-        return Alamofire.request(Router.JobStatus)
+        return manager.request(Router.JobStatus)
     }
 }
 
